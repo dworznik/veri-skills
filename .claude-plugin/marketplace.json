@@ -1,0 +1,15 @@
+{
+  "name": "veri-how",
+  "description": "Agent Skills from veri.how",
+  "owner": {
+    "name": "Patryk Dwórznik",
+    "url": "https://dworznik.com"
+  },
+  "plugins": [
+    {
+      "name": "veri",
+      "description": "Read-only Agent Skills for Veri contracts: veri-token and veri-smartmetal.",
+      "source": "./plugins/veri"
+    }
+  ]
+}

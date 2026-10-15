@@ -1,0 +1,10 @@
+{
+  "name": "veri",
+  "description": "Read-only Agent Skills for Veri contracts: veri-token and veri-smartmetal.",
+  "author": {
+    "name": "Patryk Dwórznik",
+    "url": "https://dworznik.com"
+  },
+  "homepage": "https://veri.how/skills",
+  "license": "MIT"
+}

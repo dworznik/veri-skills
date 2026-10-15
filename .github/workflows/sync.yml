@@ -1,0 +1,32 @@
+name: sync
+
+# Pulls the veri plugin from veri.how, its source. veri.how changes the skills
+# when its facts change, so a daily run keeps this copy within a day of it.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/sync.sh
+      - name: commit any change
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Already in step with veri.how."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898283+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(sync): update the veri plugin from veri.how'
+          git push
