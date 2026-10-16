@@ -12,6 +12,8 @@ Veri SmartMetal is the ERC-1155 contract `0x4516a5D613C30A36D157d3b579813734cbb9
 
 Facts verified on 13 Oct 2026. Addresses and explorer links are in [references/contracts.md](references/contracts.md), the series in [references/series.md](references/series.md), and the ABIs in `references/`.
 
+For “when was it deployed?” questions, fetch the day-precise dates: `curl -s https://veri.how/timeline.json`.
+
 This skill is read-only. It only makes `eth_call` requests and HTTP GETs. It never signs or sends a transaction, and it never asks for a private key or seed phrase. It explains activation but can’t activate a token.
 
 ## Endpoints

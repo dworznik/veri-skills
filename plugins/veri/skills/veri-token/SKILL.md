@@ -10,6 +10,8 @@ metadata:
 
 VERI is the ERC-20 contract `0x8f3470A7388c05eE4e7AF3d01D8C722b0FF52374` on Ethereum (`eip155:1`), with 18 decimals. Facts verified on 13 Oct 2026. Addresses and explorer links are in [references/contracts.md](references/contracts.md), and the ABI is [references/veri.abi.json](references/veri.abi.json).
 
+For “when was it deployed?” questions, fetch the day-precise dates: `curl -s https://veri.how/timeline.json`.
+
 This skill is read-only. It only makes `eth_call` requests and HTTP GETs. It never signs or sends a transaction, and it never asks for a private key or seed phrase. Don’t use it to move VERI.
 
 ## Endpoints
