@@ -8,7 +8,7 @@ metadata:
 ---
 # Veri SmartMetal
 
-Veri SmartMetal is the ERC-1155 contract `0x4516a5D613C30A36D157d3b579813734cbb929a4` on Base (`eip155:8453`). Each token id stands for one physical metal piece. The address is an ERC-1967 proxy in front of Series1155V1 `0x945D54B21a582d5D186Ae1E449DdC2a4Ce39E26c`: call the proxy address with the implementation’s ABI. Minted tokens sit in the SeriesActivation contract `0x412E962bbAE0bB97CE98e74f3424543651a21ce3` until a holder activates them.
+Veri SmartMetal is the ERC-1155 contract `0x4516a5D613C30A36D157d3b579813734cbb929a4` on Base (`eip155:8453`). Each token id stands for one Veri SmartMetal silver round. The address is an ERC-1967 proxy in front of Series1155V1 `0x945D54B21a582d5D186Ae1E449DdC2a4Ce39E26c`: call the proxy address with the implementation’s ABI. Minted tokens sit in the SeriesActivation contract `0x412E962bbAE0bB97CE98e74f3424543651a21ce3` until a holder activates them.
 
 Facts verified on 13 Oct 2026. Addresses and explorer links are in [references/contracts.md](references/contracts.md), the series in [references/series.md](references/series.md), and the ABIs in `references/`.
 
